@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+}
+
+header {
+    border-bottom: 1px solid #25f4ff;
+}
+
+h1 {
+    border-bottom: 1px solid #25f4ff;
+    /* border: width, style, color for cleaner code */
+    padding: 30px;
+    margin: 0;
+    /*top, right, bottom, left */
+    font-size: 3em;
+    background: rgb(190, 0, 255);
+    background: radial-gradient(circle, rgba(190, 0, 255, 1) 0%, rgba(0, 16, 255, 1) 100%);
+    color: #609;
+    font-weight: normal;
+    font-family: "Courier New", Courier, monospace;
+}
+
+h2,
+h3,
+h4 {
+    margin: 0;
+    padding: 0;
+    color: #ff67ef;
+    font-size: 1.5em;
+    font-style: normal;
+    font-weight: bold;
+}
+
+h3 {
+    border: 1px;
+    padding: 0 0 0.25em 0;
+}
+
+ul {
+    list-style-type: circle;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: white;
+    background: rgb(127, 0, 255);
+    background: linear-gradient(45deg, rgba(127, 0, 255, 1) 0%, rgba(255, 0, 228, 1) 100%);
+    height: 2000px;
+    padding: 0 0 1em;
+}
+
+.highlight {
+    color: #25f4ff;
+}
+
+h1.highlight {
+    text-transform: uppercase;
+}
+
+p.highlight {
+    font-weight: bold;
+}
+
+.special {
+    font-size: 1em;
+    font-style: italic;
+    color: #00eca3;
+}
+
+.bold {
+    color: red;
+}
+
+.introduction {
+    font-size: 1.5em;
+    color: #20ffbc;
+    font-style: italic;
+}
+
+.navigation {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background: rgb(190, 0, 255);
+    background: radial-gradient(circle, rgba(190, 0, 255, 1) 0%, rgba(0, 16, 255, 1) 100%);
+    display: flex;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    display: block;
+    padding: 0.75em;
+}
+
+a:link {
+    color: #25f4ff;
+}
+
+a:visited {
+    color: #01b3bd;
+}
+
+a:hover {
+    color: #20ffbc;
+}
+
+article {
+    border-bottom: 1px solid rgb(22, 239, 255);
+    margin: 0;
+    padding: 1em;
+    background: radial-gradient(circle, rgba(190, 0, 255, 1) 0%, rgba(0, 16, 255, 1) 100%);
+    flex: 1 200px;
+}
+
+
+article:nth-of-type(3) {
+    flex: 2 200px;
+    /*shorthand for flex grow, flex shrink and flex basis*/
+}
+
+
+section {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+button {
+    border: none;
+    border-radius: 50px;
+    padding: 1em;
+    background-color: aqua;
+}
+
+button:hover {
+    color: beige;
+    background-color: #01b3bd;
+}
+
+input {
+    background-color: white;
+}
+
+label,
+input,
+textarea {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+form {
+    width: 30em;
+}
+
+.form-control {
+    margin-bottom: 1em;
+}
+
+textarea {
+    min-height: 10em;
+}
+
+.form-control input .form-control textarea {
+    padding: 1em
+}
+
+div {
+    padding: 1em;
+}
